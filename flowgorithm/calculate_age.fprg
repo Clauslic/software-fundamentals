@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="calculate_age"/>
+        <attribute name="authors" value="claudia"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-16 10:22:01 a. m."/>
+        <attribute name="created" value="Y2xhdWRpYTtERVNLVE9QLU45SlMzOE87MjAyNS0xMS0xNjswOToyMDoxNCBhLiBtLjszMjM1"/>
+        <attribute name="edited" value="Y2xhdWRpYTtERVNLVE9QLU45SlMzOE87MjAyNS0xMS0xNjsxMDoyMjowMSBhLiBtLjsxOzMzMzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="myAge" type="Integer" array="False" size=""/>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <declare name="birthYear" type="Integer" array="False" size=""/>
+            <declare name="currentYear" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your year of birth(AAAA): &quot;" newline="True"/>
+            <input variable="birthYear"/>
+            <if expression="birthYear &lt;= currentYear &amp; birth &gt; 999">
+                <then>
+                    <assign variable="myAge" expression="getAge(birthYear,currentYear)"/>
+                    <output expression="&quot;Your age is: &quot;&amp; myAge" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;The year of birth must be greater than 999 and less than 2025&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="getAge" type="Integer" variable="age">
+        <parameters>
+            <parameter name="bYear" type="Integer" array="False"/>
+            <parameter name="cYear" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <assign variable="age" expression="cYear - bYear"/>
+        </body>
+    </function>
+</flowgorithm>

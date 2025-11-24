@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reto 1"/>
+        <attribute name="authors" value="MT-110825"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-21 09:21:18 p. m."/>
+        <attribute name="created" value="TVQtMTEwODI1O0RFU0tUT1AtRlBMSEVMRTsyMDI1LTExLTIxOzA1OjE4OjU5IHAuwqBtLjszMjA4"/>
+        <attribute name="edited" value="TVQtMTEwODI1O0RFU0tUT1AtRlBMSEVMRTsyMDI1LTExLTIxOzA1OjM0OjUxIHAuwqBtLjsxOzMzMDY="/>
+        <attribute name="edited" value="Y2xhdWRpYTtERVNLVE9QLU45SlMzOE87MjAyNS0xMS0yMTswOToyMToxOCBwLiBtLjsxOzMzNTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dad" type="Integer" array="False" size=""/>
+            <declare name="parimp" type="String" array="False" size=""/>
+            <output expression="&quot;lanzar dado&quot;" newline="True"/>
+            <assign variable="dad" expression="random (6)+1"/>
+            <output expression="&quot;El numero obtenido es: &quot; &amp; dad" newline="True"/>
+            <if expression="dad % 2 == 0">
+                <then>
+                    <assign variable="parimp" expression="&quot;par&quot;"/>
+                    <output expression="&quot;El dado es par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="parimp" expression="&quot;Impar&quot;"/>
+                    <output expression="&quot;El dado es impar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
