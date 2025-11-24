@@ -8,9 +8,14 @@ Algoritmo basic_calc
 	//1. Define vars and/or const
 	Definir num1, num2, add, subs, mult Como Entero
 	Definir div Como Real
-	//Inicializar vars and/or const
-	num1 = 10;
-	num2 = 3;
+	//2. Inicializar vars and/or const
+	//Inputs
+	Escribir "Enter number 1: " 
+	Leer num1
+	
+	Escribir "Enter number 2: " 
+	Leer num2
+	
 	//3. Processes
 	add = num1 + num2;
 	subs = num1 - num2;
